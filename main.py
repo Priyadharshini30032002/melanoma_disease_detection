@@ -95,7 +95,7 @@ def perform_feature_extraction(features_text, status_label):
         features_text.insert(tk.END, formatted_output)
         features_text.config(state=tk.DISABLED)
         
-        status_label.config(text=f"✅ Feature extraction complete! Extracted {len(features)} features.")
+        status_label.config(text=f"✅ Feature extraction complete!")
         
     except Exception as e:
         status_label.config(text=f"❌ Error during feature extraction: {str(e)}")
